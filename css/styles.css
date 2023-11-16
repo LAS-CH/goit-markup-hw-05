@@ -562,6 +562,66 @@ img {
   gap: 16px;
 }
 
+/* Subscribe */
+.subscribe {
+  margin-left: 80px;
+}
+.subscribe-p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.subscribe-form {
+  display: flex;
+}
+.subscribe-label {
+  color: #8e8f99;
+}
+.subscribe-form-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--WHITE, #fff);
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background: var(--NAVY-BLUE, #2e2f42);
+}
+.subscribe-div-btn {
+}
+
+.subscribe-btn-confirm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+  margin-left: 24px;
+  width: 165px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.subscribe-btn-confirm:focus,
+.subscribe-btn-confirm:hover {
+  background-color: #404bbf;
+}
+
+.subscribe-icon {
+  margin-left: 16px;
+}
+
 .section-team {
   fill: transparent;
 }
@@ -650,8 +710,7 @@ img {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
-.form-feedback {
-}
+
 .form-one {
   margin-bottom: 8px;
 }
@@ -738,8 +797,6 @@ img {
   fill: transparent;
   stroke: transparent; /* #F4F4FD */
   margin-right: 8px;
-}
-.feedback-chekbox-icon {
 }
 
 .feedback-chekbox-input:checked
