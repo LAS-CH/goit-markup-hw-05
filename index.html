@@ -592,7 +592,7 @@
     </footer>
 
     <!-- backdrop -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <!-- is-open -->
       <div class="modal">
         <button
@@ -607,23 +607,19 @@
         <p class="feedback">Leave your contacts and we will call you back</p>
         <form class="form-feedback">
           <div class="form-one">
-            <label class="label-form" for="user-first-name">Name</label>
+            <label class="label-form" for="user-name">Name</label>
             <div class="position-div">
               <input
                 class="inpit-name"
                 type="text"
-                name="user-first-name"
-                id="user-first-name"
+                name="user-name"
+                id="user-name"
                 required
                 pattern="[a-zA-Z-а-яА-ЯіІїЇєЄйЙ']+"
                 title="Viktor"
               />
-              <svg class="feedback-svg-icon" width="18" height="18">
-                <use
-                  href="./images/icons.svg#icon-person"
-                  width="18"
-                  height="18"
-                ></use>
+              <svg class="feedback-svg-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
@@ -639,7 +635,7 @@
                 title="xxx-xxx-xx-xx"
                 required
               />
-              <svg class="feedback-svg-icon" width="18" height="18">
+              <svg class="feedback-svg-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -654,17 +650,17 @@
                 id="user-email"
                 required
               />
-              <svg class="feedback-svg-icon" width="18" height="18">
+              <svg class="feedback-svg-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
-          <div class="form-one">
-            <label class="label-form" for="textarea-feedback">Comment</label>
+          <div class="form-textarea">
+            <label class="label-form" for="user-comment">Comment</label>
             <textarea
               class="feedback-textarea"
-              name="textarea-feedback"
-              id="textarea-feedback"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -672,12 +668,12 @@
             <input
               class="feedback-chekbox-input visually-hidden"
               type="checkbox"
-              name="user-policy"
+              name="user-privacy"
+              id="user-privacy"
               value="true"
-              id="user-policy"
               required
             />
-            <label class="feedback-chekbox-label" for="user-policy">
+            <label class="feedback-chekbox-label" for="user-privacy">
               <span class="feedback-chekbox-span">
                 <svg class="feedback-chekbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-property"></use>
@@ -687,9 +683,7 @@
               <a href="" class="privacy-policy">Privacy Policy</a>
             </label>
           </div>
-          <div class="submit-btn-div">
-            <button class="submit-button" type="submit">Send</button>
-          </div>
+          <button class="submit-button" type="submit">Send</button>
         </form>
       </div>
     </div>
